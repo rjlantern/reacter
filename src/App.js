@@ -1,20 +1,30 @@
+import { useState } from "react";
 import Content from "./components/contents";
 import Footer from "./components/footer";
 import Header from "./components/header";
 
-const App =()=>{
-  
+const App = ()=>{
+
+  const[fName,setFName] = useState('John') 
+
+  // let fName='John'
+  let message='Message'
+
+  const changeHandler=()=>{
+    setFName('Smith')
+  }
   return(
     <>
-    <Header fName= 'John' message='Hai John'/>
+    <Header/>
 
-    <Header fName= 'Smith' message='Hai Smith'/>
+    <Content fName={fName} message={message} changeHandler={changeHandler}/>
 
-    <Content/>
-
+   
     <Footer/>
     </>
   )
 }
 
 export default App;
+
+
