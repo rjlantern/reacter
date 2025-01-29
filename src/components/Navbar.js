@@ -14,7 +14,7 @@ const NavbarPage = ()=>{
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
           <Link to='/' className='mx-3'>Home</Link>
-            <Link to='/about' className='mx-3'>About</Link>
+            <Link to='/about' className='mx-4'>About</Link>
             <Link to='/gallery'>Gallery</Link>
           </Nav>
         </Navbar.Collapse>
